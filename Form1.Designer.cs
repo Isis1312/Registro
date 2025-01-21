@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-        l
+        
 
         #region Código generado por el Diseñador de Windows Forms
 

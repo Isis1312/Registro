@@ -38,21 +38,19 @@ namespace Resgistra
             DateTime fechafin = this.fechafin.Value;
             Boolean activo = this.si.Checked;
             int horas = ((int)this.nunhoras.Value);
-            int estuinates= ((int)this.nunestudiantes.Value);
+            int estuinates = ((int)this.nunestudiantes.Value);
             string modalidad = this.cbmodalidad.Text;
 
             Informacion informacion = new Informacion(codigo, datos, nombre, fechain, fechafin, activo, modalidad, estuinates, horas);
             cursos.Guardar(informacion);
 
-            this.txcodigo.Clear();
-            this.txdatos.Clear();
-            this.txnombrecurso.Clear();
+           
 
         }
 
         private void buscar_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void modificar_Click(object sender, EventArgs e)
@@ -62,7 +60,9 @@ namespace Resgistra
 
         private void limpiar_Click(object sender, EventArgs e)
         {
-
+            this.txcodigo.Clear();
+            this.txdatos.Clear();
+            this.txnombrecurso.Clear();
         }
     }
 }
