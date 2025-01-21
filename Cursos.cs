@@ -32,6 +32,18 @@ namespace Resgistra
             }
             return x;
         }
+        public Boolean Buscar(String n)
+        {
+            Boolean x = false;
+            Int16 w = 0;
+            while ((w < List.Count) && (!x))
+            {
+                if (List[w].Nombre == n) x = true;
+                w++;
+            }
+            return x;
+        }
+
         public void Modificar(Informacion x)
         {
             Int16 w = 0;

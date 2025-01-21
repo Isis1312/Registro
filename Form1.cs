@@ -1,3 +1,4 @@
+﻿
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,7 +27,7 @@ namespace Resgistra
 
         private void eliminar_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("¡Error: funsion fuera de servicio. Disculpe!", "Disculpe", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void guardar_Click(object sender, EventArgs e)
@@ -44,18 +45,16 @@ namespace Resgistra
             Informacion informacion = new Informacion(codigo, datos, nombre, fechain, fechafin, activo, modalidad, estuinates, horas);
             cursos.Guardar(informacion);
 
-           
-
         }
 
         private void buscar_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("¡Error: funsion fuera de servicio. Disculpe!", "Disculpe", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void modificar_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("¡Error: funsion fuera de servicio. Disculpe!", "Disculpe", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void limpiar_Click(object sender, EventArgs e)
@@ -63,6 +62,9 @@ namespace Resgistra
             this.txcodigo.Clear();
             this.txdatos.Clear();
             this.txnombrecurso.Clear();
+            this.fechain.Value = DateTime.Now;
+            this.fechafin.Value = DateTime.Now;
         }
     }
+    
 }
